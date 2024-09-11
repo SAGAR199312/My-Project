@@ -16,12 +16,12 @@ pipeline{
         }
     //}
 //}    
-       /*stage ('SonarQube analysis') {
+       stage ('SonarQube analysis') {
         environment {
-          scannerHome = tool 'Valaxy-SonarScanner' 
+          scannerHome = tool 'SonarQube-Scanner' 
         }
             steps {
-            withSonarQubeEnv('Valaxy-SonarQube-Server') 
+            withSonarQubeEnv('SonarQube-Server') 
               {
              sh '${scannerHome}/bin/sonar-scanner'
     }    
@@ -29,6 +29,5 @@ pipeline{
         }
     }
 
-}*/
-    }
 }
+    
