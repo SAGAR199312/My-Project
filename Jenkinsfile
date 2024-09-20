@@ -88,7 +88,7 @@ pipeline{
              stage("deployment"){
               steps {
                 script{
-                  sh 'deploy.sh'
+                  sh './deploy.sh'
                 }
               }
     }
