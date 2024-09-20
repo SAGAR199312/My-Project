@@ -85,11 +85,11 @@ pipeline{
             }
         }
     }
-             // stage("deployment")
-              //steps {
-                //script{
-                  //sh 'deploy.sh'
-                //}
-              //}
+             stage("deployment")
+              steps {
+                script{
+                  sh './deploy.sh'
+                }
+              }
     }
 }
