@@ -88,7 +88,8 @@ pipeline{
              stage("deployment"){
               steps {
                 script{
-                  sh './deploy.sh'
+                  //sh './deploy.sh'
+                  sh 'helm install ttrend-v3 ttrend-0.1.0.tgz'
                 }
               }
     }
